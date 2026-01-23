@@ -483,7 +483,7 @@ document.querySelectorAll('.dropdown-menu').forEach(menu => {
 // Initialize on DOM Load
 // ===================================
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Lotus Dryfruits website loaded successfully!');
+    console.log('Noble Dryfruits website loaded successfully!');
 
     // Set initial active states
     updateCartBadge();
@@ -993,7 +993,7 @@ document.head.appendChild(style);
 // ===================================
 // Shipping Banner Floating Elements
 // ===================================
-(function() {
+(function () {
     const container = document.getElementById('shippingFloatingElements');
     if (!container) return;
 
@@ -1007,9 +1007,9 @@ document.head.appendChild(style);
     for (let i = 0; i < elementCount; i++) {
         const item = document.createElement('div');
         item.className = 'shipping-float-item';
-        
+
         const randomItem = items[Math.floor(Math.random() * items.length)];
-        
+
         if (randomItem.type === 'almond') {
             item.classList.add('round-shape');
         }
@@ -1031,14 +1031,14 @@ document.head.appendChild(style);
         // Random Animation Props
         const duration = 8 + Math.random() * 15; // 8-23s
         const delay = -Math.random() * 20; // Start immediately but offset
-        
+
         item.style.animationDuration = `${duration}s`;
         item.style.animationDelay = `${delay}s`;
-        
+
         // Random direction for float
         const reverse = Math.random() > 0.5 ? 'reverse' : 'normal';
         item.style.animationDirection = reverse;
-        
+
         // Random opacity variation
         item.style.opacity = 0.3 + Math.random() * 0.4;
 
